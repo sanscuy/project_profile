@@ -126,8 +126,10 @@
             .card-gallery-top {
                 height: 95%;
             }
-            .card-gallery:hover {
-                box-shadow: 5px 5px 10px #ffd90079;
+            .card-gallery:hover  img{
+                transform: scale(1.1);
+                box-shadow: 5px 5px 10px #0000009a;
+                transition: 0.5s;
             }
             .list {
                 background: linear-gradient(black 0%, #141e3000 100%);
@@ -153,24 +155,29 @@
             .card-cakson {
                 background-color: lightcoral;
             }
-            .footer {
+            .contact {
                 padding-bottom: 400px;
             }
-            .footer h1 {
+            .contact h1 {
                 color: white;
                 padding-bottom: 20px;
             }
-            .fa-contact {
-                color: white;
+            .contact-item {
+                margin: 60px;
+                max-width: 540px;
+                box-shadow: 10px #ffffff9a;
             }
-            .fa-square-whatsapp {
-                font-size: 21px
+            .icon {
+                color: black;
+                font-size: 100px;
+                padding: 20px;
             }
-            .fa-envelope {
-                font-size: 20px;
+            .text-number {
+                padding-left: 25px;
             }
-            .fa-telegram {
-                font-size: 20px;
+            .icon-mail {
+                padding-left: 25px;
+                padding-top: 10px;
             }
         </style>
     </head>
@@ -570,12 +577,47 @@
                     </div>
                 </div>
             </section>
-            <section id="contact" class="footer">
+            <section id="contact" class="contact">
                 <h1 class="text-center">Kontak</h1>
-                <div class="container text-center">
-                    <a href="https://wa.me/6285161609020"><i class="fa-contact fa-brands fa-square-whatsapp"></i></a>
-                    <a href="mailto:hernowo.widhi.1903126@students.um.ac.id"><i class="fa-contact fa-solid fa-envelope"></i></a>
-                    <a href="t.me/hernowo60"><i class="fa-contact fa-brands fa-telegram"></i></a>
+                <div class="container contact-items">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card mb-3 contact-item">
+                                <div class="row g-0">
+                                    <div class="col-md-3">
+                                        <a class="icon" href="https://wa.me/6285161609020"><i class="fa-brands fa-square-whatsapp icon"></i></a>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <a class="icon" href="t.me/hernowo60"><i class="fa-brands fa-telegram icon"></i></a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body contact-info">
+                                            <h5 class="card-title">Nomor Telepon</h5>
+                                            <p class="card-text text-number">+62 851 6160 9020</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card mb-3 contact-item">
+                                <div class="row g-0">
+                                    <div class="col-md-4 icon-mail">
+                                        <a><i class="fa-solid fa-envelope icon"></i></a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Email</h5>
+                                            <a class="card-text" href="mailto:hernowo.widhi.1903126@students.um.ac.id">hernowo.widhi.1903126@students.um.ac.id</a>
+                                            <a class="card-text" href="mailto:masterxtsudio9@gmail.com">masterxtsudio9@gmail.com</a>
+                                            <a class="card-text" href="mailto:hernowo12a5@gmail.com">hernowo12a5@gmail.com</a>
+                                            <a class="card-text" href="mailto:masterx_60@yahoo.com">masterx_60@yahoo.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
