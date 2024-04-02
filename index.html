@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Hernowo Widhi Wicaksono">
+        <title>Profil Hernowo</title>
+        <link rel="icon" type="image/x-icon" href="assets/icon/favicon.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/style/app.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body {
+                background: linear-gradient(#FFD800 0%, #0369A1 15%, #141E30 80%, #141E30 100%);
+            }
+            .navbar {
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            }
+            .navbar-brand {
+                width: 55px;
+                padding: 0px 5px 0px 5px;
+            }
+            .gembok {
+                opacity: 0.3;
+                width: 18px;
+                height: auto;
+                margin-bottom:7px;
+                margin-right: 2px;
+            }
+            .nav-item:hover {
+                background-color: #dddddd;
+                color: #e9e9e9;
+                transition: opacity 0.5s, color 0.5s;
+                border-radius: 5px;
+            }
+            .nav-link {
+                font-size: 25px;
+            }
+            .profile {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 170px;
+            }
+            .profile img {
+                width: 300px;
+                padding-top: 75px;
+            }
+            .profile figure {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                transform: translateY(-20px);
+            }
+            .profile blockquote {
+                text-align: center;
+                color: white;
+                margin-top: 20px;
+                font-size: 35px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .profile h6 {
+                color: white;
+                opacity: 50%;
+                transform: translateY(-40px);
+                margin-bottom: -50px;
+            }
+            .biodata {
+                background: linear-gradient(white 0%, #17223900 100%);
+                padding-bottom: 300px;
+            }
+            .biodata h1 {
+                margin-bottom: 50px;
+            }
+            .riwayat-pendidikan {
+                padding: 0px 5px 0px 5px;
+            }
+            .riwayat-pendidikan p {
+                text-align: center;
+            }
+            .jenjang {
+                margin-top: 10px;
+            }
+            .card-header {
+                text-align: center;
+            }
+            .card-title {
+                text-align: center;
+                font-weight: bold;
+            }
+            .card-subtitle {
+                text-align: center;
+            }
+            .card-biodata {
+                width: 19rem;
+            }
+            .social-media strong {
+                margin-bottom: 5px;
+            }
+            .fa-brands {
+                color: black;
+            }
+            .fa-facebook {
+                font-size: 20px
+            }
+            .fa-square-instagram {
+                font-size: 21px;
+            }
+            .fa-youtube {
+                font-size: 21px;
+            }
+            .gallery h1 {
+                color: white;
+                padding-bottom: 20px;
+            }
+            .card-gallery {
+                margin-top: 17px;
+                height: 95%;
+            }
+            .btn-gallery {
+                padding-top: 10px;
+            }
+            .card-gallery-top {
+                height: 95%;
+            }
+            .card-gallery:hover {
+                box-shadow: 5px 5px 10px #ffd90079;
+            }
+            .list {
+                background: linear-gradient(black 0%, #141e3000 100%);
+                padding-bottom: 400px;
+            }
+            .list h1 {
+                color: white;
+                padding-bottom: 20px;
+            }
+            .card-list {
+                margin-top: 10px;
+                width: 18rem;
+            }
+            .card-nabila {
+                background-color: pink;
+            }
+            .card-gowok {
+                background-color: lightgreen;
+            }
+            .card-dion {
+                background-color: lightblue;
+            }
+            .card-cakson {
+                background-color: lightcoral;
+            }
+            .footer {
+                padding-bottom: 400px;
+            }
+            .footer h1 {
+                color: white;
+                padding-bottom: 20px;
+            }
+            .fa-contact {
+                color: white;
+            }
+            .fa-square-whatsapp {
+                font-size: 21px
+            }
+            .fa-envelope {
+                font-size: 20px;
+            }
+            .fa-telegram {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <img class="navbar-brand" src="assets/img/logo.png" alt="logo" href="#">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav nav-pills">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#home">Beranda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#biodata">Tentang Saya</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Galeri</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#list">Daftar Anggota</a>
+                  </li>
+                  <li class="nav-item-disabled">
+                    <a class="nav-link disabled" aria-disabled="true"><img class="gembok" src="assets/icon/gembok.png" alt="Gembok">Akan Segera Hadir</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Kontak</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-content" tabindex="0">
+            <section id="home">
+                <div class="container">
+                    <div class="profile">
+                        <img src="assets/img/foto-profil.png" alt="Foto Profil">
+                        <figure>
+                            <blockquote><p>Hernowo Widhi Wicaksono</p></blockquote>
+                            <h6>"Toroh nyowo hang regem tresno tanpo sayah"</h6>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L48,128C96,160,202,224,288,229.3C384,235,480,181,576,149.3C672,117,768,107,864,133.3C960,160,1056,224,1152,240C1248,256,1344,224,1392,208L1440,202L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C202,320,96,320,48,320L0,320Z"></path></svg>
+            <section id="biodata" class="biodata">
+                <h1 class="text-center">Tentang Saya</h1>
+                <div class="container">
+                    <div class="container row mx-auto">
+                        <div class="col-sm">
+                            <p>Di sini dengan website sederhana, saya ingin mengajak Anda berbincang. Bukan sekedar berbincang biasa, melainkan bercerita tentang perjalanan hidup saya.</p>
+                            <p>Aku lahir di Malang tepatnya di <a href="https://maps.app.goo.gl/mxfqgEad6ueTnCdN9">Ds. Pamotan, Dampit - Kab. Malang Jatim</a>. Hidup dengan kesederhanaan dan tumbuh di lingkungan yang cukup lekat dengan tradisi meskipun pendapat setiap orang akan sangat berbeda. Saat usia muda, aku seorang <a href="https://id.wikipedia.org/wiki/Anak_indigo">indigo</a> dan mempunyai kecerdasan di atas rata-rata tak jarang membuat aku selalu merasa berbeda dan tak layak di lingkungan anak-anak sering berkelahi dan saling mengejek. Tapi menurut sebagian besar orang, menjadi seseorang yang berbeda adalah anugrah namun aku hanya lari dari kenyataan dan bahkan lebih sering bergaul dengan anak-anak di kampung lain yang menurutku sedikit lebih ramah.</p>
+                            <p class="d-inline-flex gap-1">
+                                <a data-bs-toggle="collapse" href="#collapsebiografi" role="button" aria-expanded="false" aria-controls="collapsebiografi">
+                                      Baca selengkapnya...
+                                </a>
+                            </p>
+                            <div class="collapse" id="collapsebiografi">
+                                <p>Sejak kecil, aku sangat ingin menjadi seorang tentara untuk mengabdi kepada negara. Hal itu disebabkan oleh ayah yang sering mengenalkan cita-citanya yang belum ia wujudkan, ayah berharap akulah yang bisa mewujudkan cita-citanya kelak. Namun kenyataan berkata lain, dengan kondisiku yang terlalu lemah di lingkungan seumurannya, memaksaku menjadi seorang penyendiri yang lebih sering menghabiskan waktu dengan belajar. Dengan 124 skor IQ, tak sulit bagiku untuk memahami pengetahuan yang diajarkan di lingkungan sekolah serta pengetahuan digital yang sangat sering membuatku penasaran waktu itu.</p>
+                                <p>Aku mulai dilirik beberapa orang, karena dipercaya dapat meramal perjudian sejak aku bisa berbicara. Bagi diriku di umur semuda itu, tidaklah mungkin bisa mengetahui bahwa aku telah dimanfaatkan oleh orang-orang yang menginginkan harta dan kekayaan secara instan. Tentu saja saat ini aku mengetahui bahwa hal tersebut adalah hal yang salah, namun kenyataannya diriku sangat sering dieksploitasi dengan imbalan kecil berupa mainan yang mendorongku untuk melakukannya secara terus-menerus. Untungnya hal tersebut mulai berhenti semenjak aku memasuki pendidikan sekolah, walaupun aku tau hal tersebut memang sengaja dihentikan oleh orang tua untuk kepentingan sekolahku.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 riwayat-pendidikan">
+                            <p><strong>Riwayat Pendidikan</strong></p>
+                            <p>
+                                <button class="btn btn-info jenjang" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesd" aria-expanded="false" aria-controls="collapsesd">
+                                    Sekolah Dasar
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapsesd">
+                                <div class="card-biodata card card-body mx-auto">
+                                    <div class="card-content">
+                                        <div class="card-header">
+                                            <h3 class="card-title fs-5" id="cardLabel">SDN 4 Pamotan</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>Juara 2 Ujian Sekolah</li>
+                                                <li>Juara 1 Ujian Nasional</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <button class="btn btn-info jenjang" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesmp" aria-expanded="false" aria-controls="collapsesmp">
+                                    Sekolah Menengah Pertama
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapsesmp">
+                                <div class="card-biodata card card-body mx-auto">
+                                    <div class="card-content">
+                                        <div class="card-header">
+                                            <h3 class="card-title fs-5" id="cardLabel">SMPN 1 Dampit</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>Juara 1 Jambore Kabupaten (PANESAD)</li>
+                                                <li>Anggota Upper 1 Ujian Nasional</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <button class="btn btn-info jenjang" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesma" aria-expanded="false" aria-controls="collapsesma">
+                                    Sekolah Menengah Atas
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapsesma">
+                                <div class="card-biodata card card-body mx-auto">
+                                    <div class="card-content">
+                                        <div class="card-header">
+                                            <h3 class="card-title fs-5" id="cardLabel">SMAN 1 Dampit</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>Juara 1 Jambore Kabupaten (SBH Dampit)</li>
+                                                <li>Duta Kesehatan Kabupaten Malang</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>
+                                <button class="btn btn-info jenjang" type="button" data-bs-toggle="collapse" data-bs-target="#collapsecollage" aria-expanded="false" aria-controls="collapsecollage">
+                                    Perguruan Tinggi
+                                </button>
+                            </p>
+                            <div class="collapse" id="collapsecollage">
+                                <div class="card-biodata card card-body mx-auto">
+                                    <div class="card-content">
+                                        <div class="card-header">
+                                            <h3 class="card-title fs-5" id="cardLabel">Universitas Negeri Malang</h3>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul>
+                                                <li>Juara 2 KOMIPA Dance</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 text-center social-media">
+                            <p><strong>Sosial Media</strong></p>
+                            <p class="col-sm">
+                                <a href="https://www.facebook.com/hernowo.w.wicaksono"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/hernowo_60"><i class="fa-brands fa-square-instagram"></i></a>
+                                <a href="https://www.youtube.com/channel/@pakherno"><i class="fa-brands fa-youtube"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="gallery" class="gallery">
+                <div class="container">
+                    <h1 class="text-center">Galeri</h1>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div class="card-gallery card mx-auto">
+                                    <img src="assets/img/gallery/pic01.jpg" class="card-img-top" alt="pic01">
+                                    <div class="card-body">
+                                      <p class="card-text">Foto profil kebanggaan, diambil oleh <a href="https://www.instagram.com/novinurdianto8686?igsh=MXEybHR3NnZtYWR4eQ==">Novi Nurdianto</a> di <a href="https://maps.app.goo.gl/Yqn1C12iL9hTAsjD6">Spectre Cafe</a> dengan sedikit sentuhan Photoshop.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card-gallery card mx-auto">
+                                    <img src="assets/img/gallery/pic02.jpg" class="card-img-top" alt="pic02">
+                                    <div class="card-body">
+                                      <p class="card-text">Foto profil pengganti dari foto sebelumnya, diambil oleh <a href="https://www.instagram.com/gala_dkms?igsh=dTJiMG04enpxeTY2">Gala Taqwasyah</a> di <a href="https://maps.app.goo.gl/nBwSKbH3gjQf3obx9">Cafe Bang Jack</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card-gallery card mx-auto">
+                                    <img src="assets/img/gallery/pic03.jpg" class="card-img-top" alt="pic03">
+                                    <div class="card-body">
+                                      <p class="card-text">Foto bersama adik kandung di <a href="https://maps.app.goo.gl/nG7ggJ1hrczXydnd8">Alun-alun Kota Malang</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="card-gallery card mx-auto">
+                                    <img src="assets/img/gallery/pic04.jpg" class="card-img-top" alt="pic04">
+                                    <div class="card-body">
+                                      <p class="card-text">Foto setelah upacara Hari Pahlawan, diambil oleh <a href="https://www.instagram.com/naurohsalsaa?igsh=MWQ1cDY0ZjNxY3AxdA==">Salsa</a> di Lapangan <a href="https://maps.app.goo.gl/YuWFrMDMVQ8NZXx47">MTs Miftahul Huda - Turen</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="btn-gallery text-center">
+                                <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapsegallery" aria-expanded="false" aria-controls="collapsegallery">
+                                    Gambar lainnya
+                                </button>
+                            </p>
+                            <div class="collapse row" id="collapsegallery">
+                                <div class="col-sm-3">
+                                    <div class="card card-gallery-top mx-auto">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card card-gallery-top mx-auto">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card card-gallery-top mx-auto">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card card-gallery-top mx-auto">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card-gallery card mx-auto">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card-gallery card mx-auto">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card-gallery card mx-auto">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card-gallery card mx-auto">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card-gallery card mx-auto">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card-gallery card mx-auto">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card-gallery card mx-auto">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card-gallery card mx-auto">
+                                        <img src="..." class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,128L48,133.3C96,139,192,149,288,133.3C384,117,480,75,576,85.3C672,96,768,160,864,170.7C960,181,1056,139,1152,138.7C1248,139,1344,181,1392,202.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+            <section id="list" class="list">
+                <h1 class="text-center">Daftar Anggota</h1>
+                <div class="container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="card-list card mx-auto">
+                                    <div class="card-body card-nabila">
+                                        <h5 class="card-title">Nabila P.A.</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"><u>Anggota cewek di grup</u></h6>
+                                        <p class="card-text">Dia memiliki banyak julukan, kadang disebut Hana, Rahma Widya, dan Andini Suci Putri. Namun, yang paling sering dipanggil adalah Nabila Putri Ananda.</p>
+                                        <p class="d-inline-flex gap-1">
+                                            <a data-bs-toggle="collapse" href="#collapselist-nabila" aria-expanded="false" aria-controls="collapselist-nabila">
+                                                Selanjutnya...
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapselist-nabila">
+                                            <p>Dia memiliki hubungan spesial dengan Cak Son, meskipun Cak Son tidak menanggapinya dengan serius karena kesibukannya.</p>
+                                            <p>Dia juga anggota yang muncul ketika saya menginjak jenjang SMP, karena dia memiliki peran untuk menemani Gowok sebagai anggota pertama yang sedang dilanda kesedihan.</p>
+                                            <p>Nabila muncul awalnya hanya untuk menemani, meskipun pada akhirnya dia juga ikut serta dalam pergantian shift mulai saya masuk jenjang SMA.</p>
+                                            <p>Sok cantik dan tengil namun terlalu manja dan selalu merasa kurang dengan apa yang dia dapatkan.</p>
+                                            <p>Dia juga cukup menyukai anak-anak dan hewan peliharaan rumah seperti Cak Son.</p>
+                                            <p>Mudah cemburu, terutama ketika Cak Son lebih diperhatikan oleh <a href="https://www.instagram.com/yasminsaa_?igsh=MTRhN25vNzZ0YjV2aQ==">Yasmin</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card-list card mx-auto">
+                                    <div class="card-body card-gowok">
+                                        <h5 class="card-title">Gowok</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"><u>Sangat penakut dan penyendiri</u></h6>
+                                        <p class="card-text">Dia selalu pesimis dan pemurung walaupun kadang akan memberikan senyuman jika mendapatkan perlakuan yang layak.</p>
+                                        <p class="d-inline-flex gap-1">
+                                            <a data-bs-toggle="collapse" href="#collapselist-gowok" role="button" aria-expanded="false" aria-controls="collapselist-gowok">
+                                                Selanjutnya...
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapselist-gowok">
+                                            <p>Dia nampak terlalu baik di mata anggota lain, bahkan terlihat naif jika memutuskan sesuatu tanpa bermusyawarah dengan anggota lain.</p>
+                                            <p>Meskipun dia terlihat tidak memiliki harapan dan tujuan untuk masa depan, namun sampai saat ini dia diam-diam memiliki pendirian untuk memberikan rasa sayangnya kepada adik dan perempuan yang dia kagumi tanpa mengharapkan imbalan.</p>
+                                            <p>Dia sangat tidak suka dipuji, bahkan dia juga tidak suka usahanya untuk orang lain diketahui oleh targetnya.</p>
+                                            <p>Gowok merupakan salah satu peran penting dan memiliki jangka waktu shift yang sangan panjang. Dia mendominasi shift semasa saya di bangku sekolah.</p>
+                                            <p>Dia sangat pemaaf bahkan tidak pernah memikirkan tentang kejahatan orang lain terhadap dirinya.</p>
+                                            <p>Terlepas dengan sifatnya yang pesimis, namun sampai saat ini dia memiliki sebuah ambisi yang bahkan semua anggota lain mengetahui bahwa ambisi tersebut merupakan hal yang mustahil. Ambisi tersebut dia lakukan untuk seorang perempuan yang sangat dia kagumi, bahkan dia rela memberikan dan kehilangan apapun untuk keberhasilannya. Nampaknya ambisi tersebut dia hadapi dengan bantuan Gowok.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card-list card mx-auto">
+                                    <div class="card-body card-dion">
+                                        <h5 class="card-title">Dion</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"><u>Si paling bebas dan egois</u></h6>
+                                        <p class="card-text">Sang berandal yang sangat sulit diatur bahkan oleh Cak Son sekalipun.</p>
+                                        <p class="d-inline-flex gap-1">
+                                            <a data-bs-toggle="collapse" href="#collapselist-dion" role="button" aria-expanded="false" aria-controls="collapselist-dion">
+                                                Selanjutnya...
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapselist-dion">
+                                            <p>Dia sangat unik, karena satu-satunya anggota yang sering menentang keputusan bersama di grup. </p>
+                                            <p>Dia punya pendirian sendiri dan berkehendak bebas yang sering kali merugikan saya atau anggota lainnya.</p>
+                                            <p>Mesikupun dengan kepribadiannya yang terlihat negatif, namun Dion juga merupakan salah satu peran penting dan memiliki jangka waktu shift yang sangan panjang. Dia mendominasi shift semasa saya di bangku perkuliahan sampai saat ini.</p>
+                                            <p>Dia selalu percaya diri dan sok asik, bahkan terkadang terlalu percaya diri sampai anggota lainnya juga terkena dampak masalah yang dia sebabkan.</p>
+                                            <p>Berkebalikan dengan Gowok yang pemaaf, si Dion sangatlah sensitif dan pendendam. Namun dia hanya memperdulikan dirinya sendiri dan tidak terlalu memperdulikan perlakuan buruk orang lain terhadap Nabila, Gowok ataupun Cak Son.</p>
+                                            <p>Kurang perduli dengan perasaan orang lain, dia melakukan sesuatu sesuai dengan apa yang dia mau dan apa yang dia inginkan.</p>
+                                            <p>Terlepas dengan sifatnya yang egois, namun sampai saat ini dia memiliki sebuah ambisi mustahil yang diminta oleh Gowok. Ambisi tersebut dia lakukan karena rasa bersalah kepada Gowok terhadap wanita yang dikagumi, namun dia melakukan hal yang diminta Gowok dengan caranya sendiri yang hampir selalu menambah masalah dan memperburuk permsalahan. Nampaknya ambisi tersebut dia hadapi dengan penuh amarah dan rasa dendam.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm">
+                                <div class="card-list card mx-auto">
+                                    <div class="card-body card-cakson">
+                                        <h5 class="card-title">Cak Son</h5>
+                                        <h6 class="card-subtitle mb-2 text-body-secondary"><u>Anggota baru tapi tertua</u></h6>
+                                        <p class="card-text">Panutan semua anggota lain yang cukup dihormati. Dia sangat perduli bahkan sering menyelesaikan masalah anggota lain.</p>
+                                        <p class="d-inline-flex gap-1">
+                                            <a data-bs-toggle="collapse" href="#collapselist-cakson" role="button" aria-expanded="false" aria-controls="collapselist-cakson">
+                                                Selanjutnya...
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapselist-cakson">
+                                            <p>Anggota yang memiliki jangka waktu shift yang paling pendek, namun dia selalu memanfaatkan saktunya semaksimal mungkin untuk kebaikan diri saya dan orang lain.</p>
+                                            <p>Dia sangat dihormati oleh Nabila dan Gowok, bahkan sering kali keputusan yang tepat datang dari kebijaksanaannya.</p>
+                                            <p>Hampir semua permasalahan dan tanggung jawab yang ditinggalkan anggota lain selalu dia urus. Namun sampai sekarang ini dia tidak pernah mau untuk ikut campur dengan permasalahan asmara besar yang sedang di hadapi bersama oleh Gowok dan Dion.</p>
+                                            <p>Kurang suka menarik perhatian dan kurang suka bicara karena suaranya yang begitu berat.</p>
+                                            <p>Suka dengan anak-anak sehingga dia mau mengajar dengan sepenuh hati, meskipun pekerjaan itu bukanlah tanggung jawab dan keputusannya sendiri.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="footer">
+                <h1 class="text-center">Kontak</h1>
+                <div class="container text-center">
+                    <a href="https://wa.me/6285161609020"><i class="fa-contact fa-brands fa-square-whatsapp"></i></a>
+                    <a href="mailto:hernowo.widhi.1903126@students.um.ac.id"><i class="fa-contact fa-solid fa-envelope"></i></a>
+                    <a href="t.me/hernowo60"><i class="fa-contact fa-brands fa-telegram"></i></a>
+                </div>
+            </section>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN8N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    </body>
+</html>
